@@ -104,16 +104,3 @@
 	 background-image: linear-gradient(to top, #19a2ae, #25a8b3, #2fadb9, #38b3be, #40b9c4, #40b9c4, #40b9c4, #40b9c4, #38b3be, #2fadb9, #25a8b3, #19a2ae);
   }
 
-  main {
-display:flex;
-flex-direction: column;
-flex-wrap: wrap;
-  }
-
-  header {
-flex: 80%;
-  }
-
-  aside {
-	flex: 20%;
-  }
