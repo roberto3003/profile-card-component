@@ -47,7 +47,7 @@
 	line-height: 1.5;
 	font-family: system-ui;
 	font-size: clamp(1rem, 1.5vw,  30px) ;
-	color: white;
+	color: var(--very-dark);
 	letter-spacing: 0.25em;
 	background-color: var(--main-bg-color);
   }
@@ -108,33 +108,48 @@
 	display: grid;
 	grid-template-columns:repeat(3, 1fr) ;
 	grid-template-rows: repeat(5, 1fr);
+	width: clamp(300px, 80vw, 1200px);
+	height: clamp(300px, 80vw, 1200px);
   }
 
 
   .upper {
-grid-column-start: 1;
-grid-column-end: 4;
-grid-row-start: 1;
-grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	background-image: url("./images/bg-pattern-card.svg");
   }
 
-img {
-grid-column-start: 2;
-grid-column-end: 3;
-grid-row-start: 2;
-grid-row-end: 4;
- }
+  img {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 4;
+	place-self: center;
+	width: clamp(60px, 16vw, 240px);
+	height: clamp(60px, 16vw, 240px);
+	border-radius: 50%;
+	border: 0.5vw white solid ;
+	z-index: 1;
+  }
 
- main {
-grid-column-start: 1;
-grid-column-end: 4;
-grid-row-start: 4;
-grid-row-end: 5;
-}
+  main {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 3;
+	grid-row-end: 6;
+	background-color: white;
+  }
 
-aside {
-grid-column-start: 1;
-grid-column-end: 4;
-grid-row-start: 5;
-grid-row-end: 6;
-}
+  aside {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 5;
+	grid-row-end: 6;
+	background-color: white;
+
+	display:grid;
+	grid-template-columns:repeat(3, 1fr) ;
+
+  }
